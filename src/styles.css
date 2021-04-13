@@ -12,19 +12,55 @@ body{
 h1{
     font-size: 2.25rem;
     font-weight: 300;
-
+color: #fff;
 }
 
 h2{
     font-size: 1.3125rem;
  
-    text-transform: capitalize;
+
 }
 
-h2 + p {
+h1 + p {
        color: #F18119;
+       font-size: 1.3125rem;
+font-weight: 900;
+}
+
+h2{
+font-weight: 900;
+}
+
+h2 + p{
+    color: #F18119;
+    font-size: 1rem;
+font-weight: 900;
+text-transform: uppercase;
 }
 
 strong{
     font-weight: 900;
+}
+
+.top-text{
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    font-weight: 900;
+}
+
+p{
+    font-size: 1.325rem;
+}
+
+.fine-print_{
+    font-size: 0.625rem;
+}
+
+/* IMAGE */
+
+.right{
+   background-image: url(../images/bbq.jpg); 
+   background-position: center;
+   background-size: cover;
+   opacity: 0.9;
 }
