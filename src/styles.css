@@ -1,88 +1,136 @@
-body{
-    font-family: 'Source Sans Pro', sans-serif;
-    margin:0;
-    padding: 0;
-    font-size: 1.125rem;
-    color: #404040;
+*{box-sizing: border-box;}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #404040;
 }
 
 /* Typography */
 
-
-h1{
-    font-size: 2.25rem;
-    font-weight: 300;
-color: #fff;
-margin: 2em;
-
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #fff;
+margin: 0;
 }
 
-h2{
-    font-size: 1.3125rem;
- 
-
+h2 {
+  font-size: 1.3125rem;
 }
 
 h1 + p {
-       color: #F18119;
-       font-size: 1.3125rem;
-font-weight: 900;
-text-transform: uppercase;
-margin: 0;
+  color: #f18119;
+  font-size: 1.3125rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 auto;
+  /* text-align: center ; */
 }
 
-h2{
-font-weight: 900;
-margin: 0;
+
+
+h2 + p {
+  color: #f18119;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
 }
 
-h2 + p{
-    color: #F18119;
-    font-size: 1rem;
-font-weight: 900;
-text-transform: uppercase;
-margin-top: 0;
+strong {
+  font-weight: 900;
 }
 
-strong{
-    font-weight: 900;
+.top-text {
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  font-weight: 900;
+  color: #f18119;
+  order: -1;
+  text-decoration: 1em overline;
+  text-align: center;
 }
 
-.top-text{
-    text-transform: uppercase;
-    font-size: 0.625rem;
-    font-weight: 900;
-    color: #F18119;
-    order: -1;
-    text-decoration: 1em overline;
-    text-align: center;
-
-}
-
-p{
-    font-size: 1.325rem;
-}
-
-.fine-print_{
-    font-size: 0.625rem;
+.fine-print_ {
+  font-size: 0.625rem;
 }
 
 /* IMAGE */
 
-.main{
-   background-image: url(../images/bbq.jpg); 
-   background-color: #404040; /*for when the image doesn't load-up*/
-   background-position: center;
-   background-size: cover;
-   opacity: 0.9;
-   padding: 0 0.5em 2em;
-   display: flex;
-   flex-direction: column;
+.main {
+  background-image: url(../images/bbq.jpg);
+  background-color: #404040; /*for when the image doesn't load-up*/
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  padding: 0 0.5em 2em;
+  
 
 }
 
-.bottom{
-    padding: 2em 1em;
+.bottom {
+  padding: 2em 1em;
+
 }
 
-/* Layout */
+.wrapper{
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+  margin: 0;
+}
+
+
+/*Media query */
+
+
+@media (min-width: 550px) {
+  body {
+    font-size: 1.125rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 + p {
+    font-size: 1.75rem;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    min-height: 100vh;
+  }
+
+  .main,
+  .bottom {
+    width: 50%;
+    min-height: 100vh;
+    
+  }
+
+
+
+  h1 {
+    margin-bottom: 0;
+    
+  }
+
+  h2,
+  h1 + p {
+    margin: 1em;
+  }
+
+  .bottom{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+  }
+
+  
+}
